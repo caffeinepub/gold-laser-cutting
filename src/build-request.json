@@ -1,0 +1,279 @@
+{
+  "kind": "build_request",
+  "title": "Luxury black & gold business website for Gold Laser Cutting (Etawah) with local SEO and lead CTAs",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page, premium luxury marketing website for the business \"Gold Laser Cutting\" (Etawah, Uttar Pradesh, India) with a consistent black-and-gold theme, elegant typography, and a mobile-first responsive layout.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a premium, modern, luxury business website.",
+          "Theme: Black and Gold luxury theme.",
+          "Design: Elegant, professional, mobile-friendly, fast loading."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Website uses a consistent black + gold luxury palette across all sections (backgrounds, accents, buttons, typography).",
+        "All sections are responsive and readable on mobile, tablet, and desktop breakpoints.",
+        "Pages/sections load without layout shift and remain performant (lazy-load non-critical images, avoid heavy assets)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement the homepage hero section with the exact heading and subheading provided and three primary CTAs: Call Now (tel:7906968141), WhatsApp Now (link to WhatsApp chat for 8126108743), and Get Quote (scrolls to a quote/contact form section).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Homepage:\nHeading: \"Best Gold Laser Cutting Service in Etawah\"\nSubheading: \"5+ Years of Precision Jewellery Laser Cutting Experience\"\nButtons:\n- Call Now (7906968141)\n- WhatsApp Now (8126108743)\n- Get Quote"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero shows heading exactly: \"Best Gold Laser Cutting Service in Etawah\".",
+        "Hero shows subheading exactly: \"5+ Years of Precision Jewellery Laser Cutting Experience\".",
+        "Call Now button opens the device dialer via tel:7906968141.",
+        "WhatsApp Now button opens WhatsApp chat for 8126108743 (using wa.me or equivalent).",
+        "Get Quote button scrolls to the Quote/Contact section reliably."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add an About Us section in English describing 5+ years of jewellery laser cutting experience, advanced laser machines, high precision, fine finishing, and being trusted in Etawah.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "About Us Section:\nWrite about our 5+ years experience in jewellery laser cutting.\nMention we provide all types of jewellery cutting using advanced laser machines with high precision and fine finishing.\nHighlight that we are trusted in Etawah."
+        ]
+      },
+      "acceptanceCriteria": [
+        "About Us content is in English and includes: 5+ years experience, advanced laser machines, high precision, fine finishing, trusted in Etawah."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add a Services section listing all services provided by the user, displayed as premium cards or a clean list with icons, keeping copy in English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Services Section:\n- Gold Jewellery Laser Cutting\n- All Types of Jewellery Cutting by Laser Machine\n- Custom Design Cutting\n- Name Cutting\n- Pattern Cutting\n- Fine Detail Work\n- Bulk Order Accepted"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Services section includes all 7 services exactly as listed (English).",
+        "Services layout remains readable on mobile and does not overflow."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add a Gallery section with luxury-styled image placeholders for jewellery cutting samples, using locally stored static images in the frontend public assets.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Gallery Section:\nAdd image placeholders for jewellery cutting samples."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Gallery renders a grid/carousel of at least 6 sample placeholder images.",
+        "Images are served as static frontend assets (not fetched through the backend).",
+        "Images are lazy-loaded (where applicable) to support fast loading."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Add a Why Choose Us section containing all six bullet points provided by the user.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Why Choose Us:\n- 5+ Years Experience\n- Advanced Laser Machine\n- Perfect Finishing\n- Fast Delivery\n- Trusted by Local Jewellers\n- Affordable Pricing"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Why Choose Us section includes all 6 points exactly as listed.",
+        "Section uses a premium, scannable layout (e.g., icon + label) and remains mobile-friendly."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add a Testimonials section with 3 positive customer reviews (English), presented in a premium card layout.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Testimonials Section:\nAdd 3 positive customer reviews."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Exactly 3 testimonial entries are shown.",
+        "Testimonials are positive, relevant to jewellery laser cutting, and written in English."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add an FAQ section that includes the four provided questions and clear English answers aligned with the business (time to cut, custom designs, starting price, bulk orders).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "FAQ Section:\n- How much time does cutting take?\n- Do you accept custom designs?\n- What is starting price?\n- Do you take bulk orders?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "FAQ includes all 4 questions exactly as listed.",
+        "Each question has a visible answer in English (accordion or similar is acceptable)."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add a Contact section including: business name, location (Etawah, Uttar Pradesh), primary phone number (7906968141), WhatsApp number (8126108743), a simple Get Quote form (name, phone, message), and a Google Maps embed for Etawah, Uttar Pradesh.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Contact Section:\nLocation: Etawah, Uttar Pradesh\nAdd Google Maps integration."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact section displays Etawah, Uttar Pradesh and both contact numbers clearly.",
+        "A Google Maps embed (iframe) is rendered and responsive on mobile.",
+        "Get Quote form is present with at least: Name, Phone, Message fields.",
+        "Submitting the form does not require external email services; it should provide a usable action (e.g., opens WhatsApp with a prefilled message to 8126108743 and/or shows a confirmation message)."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement a sticky WhatsApp button that remains visible while scrolling and opens WhatsApp chat to 8126108743; also ensure click-to-call is available in the header/hero and contact section via tel:7906968141.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Add sticky WhatsApp button.\nAdd click-to-call feature."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Sticky WhatsApp button is visible on mobile and desktop without obstructing core content.",
+        "Sticky WhatsApp button opens WhatsApp chat to 8126108743.",
+        "At least two click-to-call entry points exist (hero CTA and contact section) using tel:7906968141."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Add on-page SEO and technical SEO for local search: set page title, meta description, Open Graph tags, canonical URL placeholder, and include the target keywords naturally in headings/sections; also add JSON-LD structured data for a local business using the provided business name and location.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "SEO Optimization:\nOptimize website for keywords:\n\"Gold Laser Cutting in Etawah\"\n\"Jewellery Laser Cutting in Etawah UP\"\n\"Best Gold Cutting Shop in Etawah\"\n\"Laser Jewellery Cutting Near Me\"\n\nMake it rank on Google for local jewellery laser cutting searches."
+        ]
+      },
+      "acceptanceCriteria": [
+        "HTML head includes a meaningful title and meta description referencing Gold Laser Cutting and Etawah.",
+        "Target keywords appear naturally in visible page copy (no keyword stuffing) and at least one H1/H2.",
+        "Open Graph tags are present for title/description (and image if available).",
+        "JSON-LD LocalBusiness (or similar) is present and includes name: Gold Laser Cutting and address locality: Etawah, region: Uttar Pradesh, country: India.",
+        "All user-facing text remains in English."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Add smooth animations and modern scrolling effects across sections (e.g., fade/slide-in on scroll, subtle hover transitions) while respecting performance and accessibility (reduced motion support).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Add smooth animations and modern scrolling effects."
+        ]
+      },
+      "acceptanceCriteria": [
+        "At least 4 major sections animate into view on scroll with subtle, consistent motion.",
+        "Interactive elements (buttons/cards) have smooth hover/focus transitions.",
+        "If the user prefers reduced motion, animations are minimized/disabled (prefers-reduced-motion)."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Add generated static image assets (logo + luxury placeholders) into the frontend and use them in the hero and gallery to reinforce the premium brand feel.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Gallery Section:\nAdd image placeholders for jewellery cutting samples.",
+          "Theme: Black and Gold luxury theme."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images are placed under frontend/public/assets/generated and referenced directly by the frontend.",
+        "Hero includes a brand mark/logo and/or a subtle luxury background image.",
+        "Gallery uses the generated placeholder images for consistent visual quality."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for any user-facing text.",
+    "Frontend must use React + TypeScript with Tailwind and compose (not edit) any read-only UI components under frontend/src/components/ui.",
+    "Do not edit immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "No external databases or third-party auth providers; Internet Identity only if authentication is introduced (not required for this request).",
+    "Google Maps integration must be done via a simple embed (iframe) unless the user provides an API key later."
+  ],
+  "nonGoals": [
+    "Building a multi-page CMS/admin dashboard for managing gallery/testimonials.",
+    "Implementing server-side blogging or automated backlink/SEO campaigns (\"rank on Google\" is addressed via on-page/technical SEO only).",
+    "Collecting leads via external email/SMS services (not supported).",
+    "Real-time chat or WhatsApp API automation."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Luxury minimalist logo mark for \"Gold Laser Cutting\" in black and gold (gold-laser-cutting-logo.dim_512x512.png)",
+      "Wide luxury hero background with subtle black texture and gold accents, no text (hero-bg-luxury.dim_1920x1080.png)",
+      "Jewellery laser cutting sample placeholder image 1, macro-style gold jewelry detail, no text (gallery-sample-01.dim_1200x900.png)",
+      "Jewellery laser cutting sample placeholder image 2, macro-style gold jewelry detail, no text (gallery-sample-02.dim_1200x900.png)",
+      "Jewellery laser cutting sample placeholder image 3, macro-style gold jewelry detail, no text (gallery-sample-03.dim_1200x900.png)",
+      "Jewellery laser cutting sample placeholder image 4, macro-style gold jewelry detail, no text (gallery-sample-04.dim_1200x900.png)",
+      "Jewellery laser cutting sample placeholder image 5, macro-style gold jewelry detail, no text (gallery-sample-05.dim_1200x900.png)",
+      "Jewellery laser cutting sample placeholder image 6, macro-style gold jewelry detail, no text (gallery-sample-06.dim_1200x900.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

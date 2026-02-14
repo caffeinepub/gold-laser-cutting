@@ -1,0 +1,68 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T06:30:41.872Z",
+  "summary": "Diff adds a single-page React+TS marketing site with black/gold theme, sections for Hero/About/Services/Gallery/Why Choose Us/Testimonials/FAQ/Contact, scroll-reveal animations with reduced-motion handling, and a sticky WhatsApp button. Most requirements appear implemented, but the “Why Choose Us” content cannot be verified as matching the user-provided bullet points exactly (as required).",
+  "missing_requirements": [
+    {
+      "id": "REQ-6",
+      "requirement": "Add a Why Choose Us section containing all six bullet points provided by the user (exactly as listed).",
+      "reason": "The diff implements a 6-item Why Choose Us section, but the titles/descriptions are authored content and there is no evidence they match the user-provided bullet points \"exactly as listed\" (the required canonical list is not shown in the diff summary).",
+      "evidence": [
+        "frontend/src/components/sections/WhyChooseUsSection.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added an empty backend canister (actor {}) despite no backend behavior being requested.",
+      "reason": "BuildRequest is purely about a frontend marketing website; no backend features or canister logic were requested.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Footer includes third-party attribution/marketing link to caffeine.ai with UTM parameters and a \"Built with ♥\" message.",
+      "reason": "Not requested in BuildRequest requirements or acceptance criteria; introduces outbound marketing/attribution content.",
+      "evidence": [
+        "frontend/src/components/layout/SiteFooter.tsx"
+      ]
+    },
+    {
+      "description": "Introduced Internet Identity provider wiring and actor hook usage scaffolding even though authentication was not required.",
+      "reason": "BuildRequest explicitly says authentication is not required; adding II scaffolding is extra beyond requested marketing site functionality.",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts"
+      ]
+    }
+  ],
+  "confidence": 0.62,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/StickyWhatsAppButton.tsx",
+    "frontend/src/components/layout/SiteFooter.tsx",
+    "frontend/src/components/layout/SiteHeader.tsx",
+    "frontend/src/components/sections/AboutSection.tsx",
+    "frontend/src/components/sections/ContactSection.tsx",
+    "frontend/src/components/sections/FaqSection.tsx",
+    "frontend/src/components/sections/GallerySection.tsx",
+    "frontend/src/components/sections/HeroSection.tsx",
+    "frontend/src/components/sections/ServicesSection.tsx",
+    "frontend/src/components/sections/TestimonialsSection.tsx",
+    "frontend/src/components/sections/WhyChooseUsSection.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useScrollReveal.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

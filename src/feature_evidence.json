@@ -1,0 +1,258 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-single-page-premium-luxury-marketing-website-for-the-business-gold-laser-cutting-etawah-uttar-pradesh-india-with-a-consistent-black-and-gold-theme-elegant-typography-and-a-mobile-first-responsive-layout",
+      "featureTitle": "Create a single-page, premium luxury marketing website for the business \"Gold Laser Cutting\" (Etawah, Uttar Pradesh, India) with a consistent black-and-gold theme, elegant typography, and a mobile-first responsive layout.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/layout/SiteFooter.tsx",
+        "frontend/src/components/layout/SiteHeader.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-homepage-hero-section-with-the-exact-heading-and-subheading-provided-and-three-primary-ctas-call-now-tel-7906968141-whatsapp-now-link-to-whatsapp-chat-for-8126108743-and-get-quote-scrolls-to-a-quote-contact-form-section",
+      "featureTitle": "Implement the homepage hero section with the exact heading and subheading provided and three primary CTAs: Call Now (tel:7906968141), WhatsApp Now (link to WhatsApp chat for 8126108743), and Get Quote (scrolls to a quote/contact form section).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-an-about-us-section-in-english-describing-5-years-of-jewellery-laser-cutting-experience-advanced-laser-machines-high-precision-fine-finishing-and-being-trusted-in-etawah",
+      "featureTitle": "Add an About Us section in English describing 5+ years of jewellery laser cutting experience, advanced laser machines, high precision, fine finishing, and being trusted in Etawah.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/AboutSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-services-section-listing-all-services-provided-by-the-user-displayed-as-premium-cards-or-a-clean-list-with-icons-keeping-copy-in-english",
+      "featureTitle": "Add a Services section listing all services provided by the user, displayed as premium cards or a clean list with icons, keeping copy in English.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/ServicesSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-gallery-section-with-luxury-styled-image-placeholders-for-jewellery-cutting-samples-using-locally-stored-static-images-in-the-frontend-public-assets",
+      "featureTitle": "Add a Gallery section with luxury-styled image placeholders for jewellery cutting samples, using locally stored static images in the frontend public assets.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/GallerySection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-why-choose-us-section-containing-all-six-bullet-points-provided-by-the-user",
+      "featureTitle": "Add a Why Choose Us section containing all six bullet points provided by the user.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/WhyChooseUsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-testimonials-section-with-3-positive-customer-reviews-english-presented-in-a-premium-card-layout",
+      "featureTitle": "Add a Testimonials section with 3 positive customer reviews (English), presented in a premium card layout.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/TestimonialsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-an-faq-section-that-includes-the-four-provided-questions-and-clear-english-answers-aligned-with-the-business-time-to-cut-custom-designs-starting-price-bulk-orders",
+      "featureTitle": "Add an FAQ section that includes the four provided questions and clear English answers aligned with the business (time to cut, custom designs, starting price, bulk orders).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/FaqSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-contact-section-including-business-name-location-etawah-uttar-pradesh-primary-phone-number-7906968141-whatsapp-number-8126108743-a-simple-get-quote-form-name-phone-message-and-a-google-maps-embed-for-etawah-uttar-pradesh",
+      "featureTitle": "Add a Contact section including: business name, location (Etawah, Uttar Pradesh), primary phone number (7906968141), WhatsApp number (8126108743), a simple Get Quote form (name, phone, message), and a Google Maps embed for Etawah, Uttar Pradesh.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/sections/ContactSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-sticky-whatsapp-button-that-remains-visible-while-scrolling-and-opens-whatsapp-chat-to-8126108743-also-ensure-click-to-call-is-available-in-the-header-hero-and-contact-section-via-tel-7906968141",
+      "featureTitle": "Implement a sticky WhatsApp button that remains visible while scrolling and opens WhatsApp chat to 8126108743; also ensure click-to-call is available in the header/hero and contact section via tel:7906968141.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/StickyWhatsAppButton.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-on-page-seo-and-technical-seo-for-local-search-set-page-title-meta-description-open-graph-tags-canonical-url-placeholder-and-include-the-target-keywords-naturally-in-headings-sections-also-add-json-ld-structured-data-for-a-local-business-using-the-provided-business-name-and-location",
+      "featureTitle": "Add on-page SEO and technical SEO for local search: set page title, meta description, Open Graph tags, canonical URL placeholder, and include the target keywords naturally in headings/sections; also add JSON-LD structured data for a local business using the provided business name and location.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/sections/AboutSection.tsx",
+        "frontend/src/components/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-smooth-animations-and-modern-scrolling-effects-across-sections-e-g-fade-slide-in-on-scroll-subtle-hover-transitions-while-respecting-performance-and-accessibility-reduced-motion-support",
+      "featureTitle": "Add smooth animations and modern scrolling effects across sections (e.g., fade/slide-in on scroll, subtle hover transitions) while respecting performance and accessibility (reduced motion support).",
+      "files": [
+        "frontend/src/components/sections/GallerySection.tsx",
+        "frontend/src/components/sections/HeroSection.tsx",
+        "frontend/src/components/sections/ServicesSection.tsx",
+        "frontend/src/components/sections/TestimonialsSection.tsx",
+        "frontend/src/hooks/useScrollReveal.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-generated-static-image-assets-logo-luxury-placeholders-into-the-frontend-and-use-them-in-the-hero-and-gallery-to-reinforce-the-premium-brand-feel",
+      "featureTitle": "Add generated static image assets (logo + luxury placeholders) into the frontend and use them in the hero and gallery to reinforce the premium brand feel.",
+      "files": [
+        "frontend/src/components/sections/GallerySection.tsx",
+        "frontend/src/components/sections/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

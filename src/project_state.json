@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a premium, modern, luxury (black & gold) business website for \"Gold Laser Cutting\" in Etawah, Uttar Pradesh, targeting local jewellery shop owners and retail customers, with mobile-friendly fast design, lead/contact CTAs, and local SEO.",
+  "architectural_notes": [
+    "Business contact CTAs must link to phone (tel:) and WhatsApp number, and be prominent/sticky as specified.",
+    "Include Google Maps embed/integration for Etawah, Uttar Pradesh in the contact section.",
+    "Prioritize performance: mobile-first, fast loading design while using smooth animations/scroll effects.",
+    "On-page local SEO targeting specified keywords for Etawah/UP queries."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Luxury minimalist logo mark for \"Gold Laser Cutting\" in black and gold (gold-laser-cutting-logo.dim_512x512.png)\n- Wide luxury hero background with subtle black texture and gold accents, no text (hero-bg-luxury.dim_1920x1080.png)\n- Jewellery laser cutting sample placeholder image 1, macro-style gold jewelry detail, no text (gallery-sample-01.dim_1200x900.png)\n- Jewellery laser cutting sample placeholder image 2, macro-style gold jewelry detail, no text (gallery-sample-02.dim_1200x900.png)\n- Jewellery laser cutting sample placeholder image 3, macro-style gold jewelry detail, no text (gallery-sample-03.dim_1200x900.png)\n- Jewellery laser cutting sample placeholder image 4, macro-style gold jewelry detail, no text (gallery-sample-04.dim_1200x900.png)\n- Jewellery laser cutting sample placeholder image 5, macro-style gold jewelry detail, no text (gallery-sample-05.dim_1200x900.png)\n- Jewellery laser cutting sample placeholder image 6, macro-style gold jewelry detail, no text (gallery-sample-06.dim_1200x900.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-premium-luxury-marketing-website-for-the-business-gold-laser-cutting-etawah-uttar-pradesh-india-with-a-consistent-black-and-gold-theme-elegant-typography-and-a-mobile-first-responsive-layout",
+      "title": "Create a single-page, premium luxury marketing website for the business \"Gold Laser Cutting\" (Etawah, Uttar Pradesh, India) with a consistent black-and-gold theme, elegant typography, and a mobile-first responsive layout.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-homepage-hero-section-with-the-exact-heading-and-subheading-provided-and-three-primary-ctas-call-now-tel-7906968141-whatsapp-now-link-to-whatsapp-chat-for-8126108743-and-get-quote-scrolls-to-a-quote-contact-form-section",
+      "title": "Implement the homepage hero section with the exact heading and subheading provided and three primary CTAs: Call Now (tel:7906968141), WhatsApp Now (link to WhatsApp chat for 8126108743), and Get Quote (scrolls to a quote/contact form section).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-about-us-section-in-english-describing-5-years-of-jewellery-laser-cutting-experience-advanced-laser-machines-high-precision-fine-finishing-and-being-trusted-in-etawah",
+      "title": "Add an About Us section in English describing 5+ years of jewellery laser cutting experience, advanced laser machines, high precision, fine finishing, and being trusted in Etawah.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-services-section-listing-all-services-provided-by-the-user-displayed-as-premium-cards-or-a-clean-list-with-icons-keeping-copy-in-english",
+      "title": "Add a Services section listing all services provided by the user, displayed as premium cards or a clean list with icons, keeping copy in English.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-gallery-section-with-luxury-styled-image-placeholders-for-jewellery-cutting-samples-using-locally-stored-static-images-in-the-frontend-public-assets",
+      "title": "Add a Gallery section with luxury-styled image placeholders for jewellery cutting samples, using locally stored static images in the frontend public assets.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-why-choose-us-section-containing-all-six-bullet-points-provided-by-the-user",
+      "title": "Add a Why Choose Us section containing all six bullet points provided by the user.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-testimonials-section-with-3-positive-customer-reviews-english-presented-in-a-premium-card-layout",
+      "title": "Add a Testimonials section with 3 positive customer reviews (English), presented in a premium card layout.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-faq-section-that-includes-the-four-provided-questions-and-clear-english-answers-aligned-with-the-business-time-to-cut-custom-designs-starting-price-bulk-orders",
+      "title": "Add an FAQ section that includes the four provided questions and clear English answers aligned with the business (time to cut, custom designs, starting price, bulk orders).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-contact-section-including-business-name-location-etawah-uttar-pradesh-primary-phone-number-7906968141-whatsapp-number-8126108743-a-simple-get-quote-form-name-phone-message-and-a-google-maps-embed-for-etawah-uttar-pradesh",
+      "title": "Add a Contact section including: business name, location (Etawah, Uttar Pradesh), primary phone number (7906968141), WhatsApp number (8126108743), a simple Get Quote form (name, phone, message), and a Google Maps embed for Etawah, Uttar Pradesh.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-sticky-whatsapp-button-that-remains-visible-while-scrolling-and-opens-whatsapp-chat-to-8126108743-also-ensure-click-to-call-is-available-in-the-header-hero-and-contact-section-via-tel-7906968141",
+      "title": "Implement a sticky WhatsApp button that remains visible while scrolling and opens WhatsApp chat to 8126108743; also ensure click-to-call is available in the header/hero and contact section via tel:7906968141.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-on-page-seo-and-technical-seo-for-local-search-set-page-title-meta-description-open-graph-tags-canonical-url-placeholder-and-include-the-target-keywords-naturally-in-headings-sections-also-add-json-ld-structured-data-for-a-local-business-using-the-provided-business-name-and-location",
+      "title": "Add on-page SEO and technical SEO for local search: set page title, meta description, Open Graph tags, canonical URL placeholder, and include the target keywords naturally in headings/sections; also add JSON-LD structured data for a local business using the provided business name and location.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-smooth-animations-and-modern-scrolling-effects-across-sections-e-g-fade-slide-in-on-scroll-subtle-hover-transitions-while-respecting-performance-and-accessibility-reduced-motion-support",
+      "title": "Add smooth animations and modern scrolling effects across sections (e.g., fade/slide-in on scroll, subtle hover transitions) while respecting performance and accessibility (reduced motion support).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-image-assets-logo-luxury-placeholders-into-the-frontend-and-use-them-in-the-hero-and-gallery-to-reinforce-the-premium-brand-feel",
+      "title": "Add generated static image assets (logo + luxury placeholders) into the frontend and use them in the hero and gallery to reinforce the premium brand feel.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create luxury black & gold themed, modern, mobile-friendly, fast-loading website for Gold Laser Cutting (Etawah, UP)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Homepage hero with specified heading/subheading and CTA buttons: Call Now, WhatsApp Now, Get Quote",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "About Us section highlighting 5+ years experience, advanced laser machines, precision/fine finishing, trusted in Etawah",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Services section listing all provided laser cutting services (custom/name/pattern/fine detail/bulk orders)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Gallery section with image placeholders for jewellery cutting samples",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Why Choose Us section with listed value points (experience, advanced machine, finishing, fast delivery, trusted, affordable)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Testimonials section with 3 positive customer reviews",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "FAQ section answering the four specified questions (time, custom designs, starting price, bulk orders)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Contact section including location, Google Maps integration, sticky WhatsApp button, and click-to-call feature",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "SEO optimization for provided local keywords to rank for jewellery laser cutting searches in/near Etawah",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add smooth animations and modern scrolling effects across the site",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Gold Laser Cutting",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
