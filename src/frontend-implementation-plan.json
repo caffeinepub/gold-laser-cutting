@@ -1,347 +1,53 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Luxury black & gold single-page website for Gold Laser Cutting (Etawah) with SEO + lead CTAs",
+  "title": "Add hero tagline and place uploaded jewellery images into 6th gallery card",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Build a single-page luxury black-and-gold marketing site with elegant typography and responsive layout.",
+      "id": "REQ-14",
+      "summary": "Add the exact tagline text to the homepage hero content area without changing existing heading/subheading wording.",
       "acceptanceCriteria": [
-        "Website uses a consistent black + gold luxury palette across all sections (backgrounds, accents, buttons, typography).",
-        "All sections are responsive and readable on mobile, tablet, and desktop breakpoints.",
-        "Pages/sections load without layout shift and remain performant (lazy-load non-critical images, avoid heavy assets)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "create",
-          "description": "Create the single-page layout shell and section composition (Hero, About, Services, Gallery, Why Choose Us, Testimonials, FAQ, Contact), ensuring mobile-first structure and consistent spacing/typography."
-        },
-        {
-          "path": "frontend/src/index.css",
-          "operation": "create",
-          "description": "Define the black-and-gold luxury theme using Tailwind + CSS variables (background/foreground/primary/accent), plus global typography defaults to keep styling consistent across sections."
-        },
-        {
-          "path": "frontend/src/components/layout/SiteHeader.tsx",
-          "operation": "create",
-          "description": "Create a premium sticky header with brand, navigation anchors, and click-to-call access; keep styles aligned with the black/gold theme."
-        },
-        {
-          "path": "frontend/src/components/layout/SiteFooter.tsx",
-          "operation": "create",
-          "description": "Create a simple luxury footer with business name/location and quick contact links matching the theme."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Implement hero with exact heading/subheading and CTAs for call, WhatsApp, and scroll-to-quote.",
-      "acceptanceCriteria": [
-        "Hero shows heading exactly: \"Best Gold Laser Cutting Service in Etawah\".",
-        "Hero shows subheading exactly: \"5+ Years of Precision Jewellery Laser Cutting Experience\".",
-        "Call Now button opens the device dialer via tel:7906968141.",
-        "WhatsApp Now button opens WhatsApp chat for 8126108743 (using wa.me or equivalent).",
-        "Get Quote button scrolls to the Quote/Contact section reliably."
+        "The hero section renders the tagline text exactly as: Your Trust, our Quality Work",
+        "The existing hero H1 text (\"Best Gold Laser Cutting Service in Etawah\") and existing subheading text remain unchanged",
+        "The tagline is visible on mobile and desktop and matches the existing black-and-gold premium styling"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/sections/HeroSection.tsx",
-          "operation": "create",
-          "description": "Implement the hero UI with the exact provided heading/subheading and three CTAs: tel:7906968141, WhatsApp (8126108743), and a button that scrolls to the contact/quote section. Use shadcn-ui components (e.g., Button) to ensure premium, consistent CTAs. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Wire HeroSection into the single-page composition and ensure the Get Quote CTA scroll target id is present on the contact/quote section."
+          "description": "Insert a new tagline line in the hero content area (keep the existing H1 and subheading text exactly as-is), styled to match the current black-and-gold theme and remain readable on mobile/desktop."
         }
       ]
     },
     {
-      "id": "REQ-3",
-      "summary": "Add an English About Us section describing experience, machines, precision, finishing, and trust in Etawah.",
+      "id": "REQ-15",
+      "summary": "Add the 3 uploaded images as static public assets and render them only inside the Gallery grid’s 6th card without impacting other cards.",
       "acceptanceCriteria": [
-        "About Us content is in English and includes: 5+ years experience, advanced laser machines, high precision, fine finishing, trusted in Etawah."
+        "The following files are added to the frontend public assets and are served correctly: Casting-Jewellery-Ring.jpg, Casting_type_gold_pendant_necklace_with_white_stones_by_Mannil_Jewellers__20HzeFw.webp, casting-ladies-gold-rings.jpg",
+        "The Gallery section’s 6th grid card displays all three uploaded images (e.g., as an in-card collage/slider) without affecting the other gallery cards",
+        "All displayed images include non-empty alt text in English",
+        "Images load without layout shift and preserve the existing gallery hover/animation style"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/sections/AboutSection.tsx",
+          "path": "frontend/public/assets/Casting-Jewellery-Ring.jpg",
           "operation": "create",
-          "description": "Create an About Us section in English that explicitly mentions 5+ years experience, advanced laser machines, high precision, fine finishing, and being trusted in Etawah, styled for a luxury look."
+          "description": "Add the uploaded image as a static public asset so it is served by the frontend."
         },
         {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire AboutSection into the single-page layout in the correct scroll order with an anchor id for navigation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-4",
-      "summary": "Add Services section listing all seven services as premium cards or list with icons (English).",
-      "acceptanceCriteria": [
-        "Services section includes all 7 services exactly as listed (English).",
-        "Services layout remains readable on mobile and does not overflow."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/sections/ServicesSection.tsx",
+          "path": "frontend/public/assets/Casting_type_gold_pendant_necklace_with_white_stones_by_Mannil_Jewellers__20HzeFw.webp",
           "operation": "create",
-          "description": "Implement Services section showing exactly the 7 provided services, using a premium card/list layout. Use shadcn-ui components (e.g., Card) for consistent luxury styling. Verify the component's usage instructions before implementing."
+          "description": "Add the uploaded image as a static public asset so it is served by the frontend."
         },
         {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire ServicesSection into the single-page layout and ensure it has an anchor id for navigation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-5",
-      "summary": "Add Gallery section using locally stored static placeholder images with lazy-loading.",
-      "acceptanceCriteria": [
-        "Gallery renders a grid/carousel of at least 6 sample placeholder images.",
-        "Images are served as static frontend assets (not fetched through the backend).",
-        "Images are lazy-loaded (where applicable) to support fast loading."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/sections/GallerySection.tsx",
+          "path": "frontend/public/assets/casting-ladies-gold-rings.jpg",
           "operation": "create",
-          "description": "Create a luxury-styled gallery grid of at least 6 locally-referenced images from frontend public assets, using lazy-loading and responsive columns."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire GallerySection into the single-page layout and ensure it has an anchor id for navigation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "summary": "Add Why Choose Us section with all six user-provided bullet points in a premium scannable layout.",
-      "acceptanceCriteria": [
-        "Why Choose Us section includes all 6 points exactly as listed.",
-        "Section uses a premium, scannable layout (e.g., icon + label) and remains mobile-friendly."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/sections/WhyChooseUsSection.tsx",
-          "operation": "create",
-          "description": "Implement a premium, scannable Why Choose Us layout (icon + label) containing exactly the 6 provided points, responsive on mobile."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire WhyChooseUsSection into the single-page layout and ensure it has an anchor id for navigation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "summary": "Add Testimonials section with exactly three positive English reviews in premium cards.",
-      "acceptanceCriteria": [
-        "Exactly 3 testimonial entries are shown.",
-        "Testimonials are positive, relevant to jewellery laser cutting, and written in English."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/sections/TestimonialsSection.tsx",
-          "operation": "create",
-          "description": "Add a Testimonials section with exactly three English reviews relevant to jewellery laser cutting, using a premium card layout. Use shadcn-ui components (e.g., Card) for consistent styling. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire TestimonialsSection into the single-page layout and ensure it has an anchor id for navigation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Add FAQ section with four exact questions and English answers (accordion acceptable).",
-      "acceptanceCriteria": [
-        "FAQ includes all 4 questions exactly as listed.",
-        "Each question has a visible answer in English (accordion or similar is acceptable)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/sections/FaqSection.tsx",
-          "operation": "create",
-          "description": "Implement an FAQ section that contains the 4 exact questions and clear English answers aligned to the business. Use shadcn-ui Accordion for accessible collapsible behavior. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire FaqSection into the single-page layout and ensure it has an anchor id for navigation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Add Contact section with business details, responsive Google Maps embed, and a Get Quote form with a usable non-email submission action.",
-      "acceptanceCriteria": [
-        "Contact section displays Etawah, Uttar Pradesh and both contact numbers clearly.",
-        "A Google Maps embed (iframe) is rendered and responsive on mobile.",
-        "Get Quote form is present with at least: Name, Phone, Message fields.",
-        "Submitting the form does not require external email services; it should provide a usable action (e.g., opens WhatsApp with a prefilled message to 8126108743 and/or shows a confirmation message)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/sections/ContactSection.tsx",
-          "operation": "create",
-          "description": "Create Contact section showing business name, Etawah (Uttar Pradesh), tel:7906968141, WhatsApp:8126108743, a Name/Phone/Message quote form, and a responsive Google Maps iframe embed for Etawah, Uttar Pradesh. On submit, open WhatsApp with a prefilled message and/or show an inline confirmation (no external email service). Use shadcn-ui inputs/buttons where helpful. Verify the component's usage instructions before implementing."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire ContactSection into the single-page layout; ensure it includes the scroll target id used by the Get Quote CTA."
-        }
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "summary": "Add sticky WhatsApp button and ensure click-to-call exists in hero/header and contact section.",
-      "acceptanceCriteria": [
-        "Sticky WhatsApp button is visible on mobile and desktop without obstructing core content.",
-        "Sticky WhatsApp button opens WhatsApp chat to 8126108743.",
-        "At least two click-to-call entry points exist (hero CTA and contact section) using tel:7906968141."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/StickyWhatsAppButton.tsx",
-          "operation": "create",
-          "description": "Implement a fixed-position sticky WhatsApp button that opens WhatsApp chat for 8126108743 and is styled to match the luxury theme while avoiding obstruction of key content."
-        },
-        {
-          "path": "frontend/src/App.tsx",
-          "operation": "modify",
-          "description": "Wire StickyWhatsAppButton into the page so it remains visible across scroll; verify click-to-call links are present in hero/header and contact section."
-        }
-      ]
-    },
-    {
-      "id": "REQ-11",
-      "summary": "Implement on-page and technical SEO: title/meta, OG, canonical placeholder, keyword placement, and JSON-LD LocalBusiness.",
-      "acceptanceCriteria": [
-        "HTML head includes a meaningful title and meta description referencing Gold Laser Cutting and Etawah.",
-        "Target keywords appear naturally in visible page copy (no keyword stuffing) and at least one H1/H2.",
-        "Open Graph tags are present for title/description (and image if available).",
-        "JSON-LD LocalBusiness (or similar) is present and includes name: Gold Laser Cutting and address locality: Etawah, region: Uttar Pradesh, country: India.",
-        "All user-facing text remains in English."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/index.html",
-          "operation": "modify",
-          "description": "Enhance the HTML head with SEO title/meta description, Open Graph tags, a canonical URL placeholder, and JSON-LD structured data for a LocalBusiness using name 'Gold Laser Cutting' and locality Etawah, Uttar Pradesh, India; reference a generated OG image if used."
-        },
-        {
-          "path": "frontend/src/components/sections/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Ensure at least one major heading (H1/H2) and supporting copy naturally include target local keywords (e.g., 'Gold Laser Cutting in Etawah', 'Jewellery Laser Cutting in Etawah UP') without stuffing."
-        },
-        {
-          "path": "frontend/src/components/sections/AboutSection.tsx",
-          "operation": "modify",
-          "description": "Add natural keyword mentions in English within About content where appropriate while keeping premium tone and readability."
-        }
-      ]
-    },
-    {
-      "id": "REQ-12",
-      "summary": "Add smooth on-scroll section animations and hover transitions with reduced-motion support.",
-      "acceptanceCriteria": [
-        "At least 4 major sections animate into view on scroll with subtle, consistent motion.",
-        "Interactive elements (buttons/cards) have smooth hover/focus transitions.",
-        "If the user prefers reduced motion, animations are minimized/disabled (prefers-reduced-motion)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/hooks/useScrollReveal.ts",
-          "operation": "create",
-          "description": "Create a small scroll-reveal utility hook (IntersectionObserver-based) that applies reveal state, and respects prefers-reduced-motion to minimize/disable animations."
-        },
-        {
-          "path": "frontend/src/components/sections/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Apply subtle entrance/hover/focus transitions using Tailwind classes and the scroll-reveal hook while respecting reduced motion."
-        },
-        {
-          "path": "frontend/src/components/sections/ServicesSection.tsx",
-          "operation": "modify",
-          "description": "Add consistent hover transitions for cards and scroll-reveal entrance animation (reduced-motion aware)."
+          "description": "Add the uploaded image as a static public asset so it is served by the frontend."
         },
         {
           "path": "frontend/src/components/sections/GallerySection.tsx",
           "operation": "modify",
-          "description": "Add subtle reveal animation for the gallery grid and image hover/focus transitions while keeping performance and reduced-motion support."
-        },
-        {
-          "path": "frontend/src/components/sections/TestimonialsSection.tsx",
-          "operation": "modify",
-          "description": "Add reveal animation for testimonial cards on scroll and accessible focus styling."
-        }
-      ]
-    },
-    {
-      "id": "REQ-13",
-      "summary": "Add generated static images to public assets and use them in hero and gallery.",
-      "acceptanceCriteria": [
-        "Generated images are placed under frontend/public/assets/generated and referenced directly by the frontend.",
-        "Hero includes a brand mark/logo and/or a subtle luxury background image.",
-        "Gallery uses the generated placeholder images for consistent visual quality."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/gold-laser-cutting-logo.dim_512x512.png",
-          "operation": "create",
-          "description": "Add the generated logo asset at frontend/public/assets/generated/gold-laser-cutting-logo.dim_512x512.png for direct static usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/hero-bg-luxury.dim_1920x1080.png",
-          "operation": "create",
-          "description": "Add the generated hero background asset at frontend/public/assets/generated/hero-bg-luxury.dim_1920x1080.png for direct static usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-sample-01.dim_1200x900.png",
-          "operation": "create",
-          "description": "Add the generated gallery placeholder at frontend/public/assets/generated/gallery-sample-01.dim_1200x900.png for direct static usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-sample-02.dim_1200x900.png",
-          "operation": "create",
-          "description": "Add the generated gallery placeholder at frontend/public/assets/generated/gallery-sample-02.dim_1200x900.png for direct static usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-sample-03.dim_1200x900.png",
-          "operation": "create",
-          "description": "Add the generated gallery placeholder at frontend/public/assets/generated/gallery-sample-03.dim_1200x900.png for direct static usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-sample-04.dim_1200x900.png",
-          "operation": "create",
-          "description": "Add the generated gallery placeholder at frontend/public/assets/generated/gallery-sample-04.dim_1200x900.png for direct static usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-sample-05.dim_1200x900.png",
-          "operation": "create",
-          "description": "Add the generated gallery placeholder at frontend/public/assets/generated/gallery-sample-05.dim_1200x900.png for direct static usage."
-        },
-        {
-          "path": "frontend/public/assets/generated/gallery-sample-06.dim_1200x900.png",
-          "operation": "create",
-          "description": "Add the generated gallery placeholder at frontend/public/assets/generated/gallery-sample-06.dim_1200x900.png for direct static usage."
-        },
-        {
-          "path": "frontend/src/components/sections/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Reference frontend/public/assets/generated/gold-laser-cutting-logo.dim_512x512.png in the hero as a brand mark and use frontend/public/assets/generated/hero-bg-luxury.dim_1920x1080.png as a subtle luxury background; ensure responsive behavior and avoid layout shift."
-        },
-        {
-          "path": "frontend/src/components/sections/GallerySection.tsx",
-          "operation": "modify",
-          "description": "Update the gallery to use the generated placeholders: frontend/public/assets/generated/gallery-sample-01.dim_1200x900.png through frontend/public/assets/generated/gallery-sample-06.dim_1200x900.png, with lazy-loading and consistent aspect ratios."
+          "description": "Update the Gallery grid rendering so only the 6th card (index 5) displays the three uploaded images (e.g., a fixed-aspect collage within the existing card container), while cards 1–5 continue to render exactly as before; ensure non-empty English alt text, avoid layout shift via the existing fixed aspect-ratio container, and preserve current hover/overlay animations."
         }
       ]
     }

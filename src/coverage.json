@@ -1,327 +1,50 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-14T06:30:41.877Z",
+  "generatedAt": "2026-02-14T07:16:27.220Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 13,
-    "implemented": 13,
+    "total": 2,
+    "implemented": 2,
     "items": [
       {
-        "id": "REQ-1",
-        "summary": "Create a single-page, premium luxury marketing website for the business \"Gold Laser Cutting\" (Etawah, Uttar Pradesh, India) with a consistent black-and-gold theme, elegant typography, and a mobile-first responsive layout.",
+        "id": "REQ-14",
+        "summary": "Add a new tagline line with the exact text \"Your Trust, our Quality Work\" in the hero content area (Homepage hero section), without changing the existing hero heading/subheading wording.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/App.tsx",
-          "frontend/src/index.css",
-          "frontend/src/components/layout/SiteHeader.tsx",
-          "frontend/src/components/layout/SiteFooter.tsx"
+          "frontend/src/components/sections/HeroSection.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/App.tsx",
-          "frontend/src/index.css",
-          "frontend/src/components/layout/SiteHeader.tsx",
-          "frontend/src/components/layout/SiteFooter.tsx"
+          "frontend/src/components/sections/HeroSection.tsx"
         ]
       },
       {
-        "id": "REQ-10",
-        "summary": "Implement a sticky WhatsApp button that remains visible while scrolling and opens WhatsApp chat to 8126108743; also ensure click-to-call is available in the header/hero and contact section via tel:7906968141.",
+        "id": "REQ-15",
+        "summary": "Add the 3 uploaded images as static frontend assets and display them within the Gallery section, specifically within the gallery item corresponding to the 6th card in the gallery grid (the element selected at /html/body/div/div/main/section[4]/div/div[2]/div[6]/div[1]).",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/StickyWhatsAppButton.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/StickyWhatsAppButton.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-11",
-        "summary": "Add on-page SEO and technical SEO for local search: set page title, meta description, Open Graph tags, canonical URL placeholder, and include the target keywords naturally in headings/sections; also add JSON-LD structured data for a local business using the provided business name and location.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/index.html",
-          "frontend/src/components/sections/HeroSection.tsx",
-          "frontend/src/components/sections/AboutSection.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/index.html",
-          "frontend/src/components/sections/HeroSection.tsx",
-          "frontend/src/components/sections/AboutSection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-12",
-        "summary": "Add smooth animations and modern scrolling effects across sections (e.g., fade/slide-in on scroll, subtle hover transitions) while respecting performance and accessibility (reduced motion support).",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/hooks/useScrollReveal.ts",
-          "frontend/src/components/sections/HeroSection.tsx",
-          "frontend/src/components/sections/ServicesSection.tsx",
-          "frontend/src/components/sections/GallerySection.tsx",
-          "frontend/src/components/sections/TestimonialsSection.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/hooks/useScrollReveal.ts",
-          "frontend/src/components/sections/HeroSection.tsx",
-          "frontend/src/components/sections/ServicesSection.tsx",
-          "frontend/src/components/sections/GallerySection.tsx",
-          "frontend/src/components/sections/TestimonialsSection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-13",
-        "summary": "Add generated static image assets (logo + luxury placeholders) into the frontend and use them in the hero and gallery to reinforce the premium brand feel.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/public/assets/generated/gold-laser-cutting-logo.dim_512x512.png",
-          "frontend/public/assets/generated/hero-bg-luxury.dim_1920x1080.png",
-          "frontend/public/assets/generated/gallery-sample-01.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-02.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-03.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-04.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-05.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-06.dim_1200x900.png",
-          "frontend/src/components/sections/HeroSection.tsx",
+          "frontend/public/assets/Casting-Jewellery-Ring.jpg",
+          "frontend/public/assets/Casting_type_gold_pendant_necklace_with_white_stones_by_Mannil_Jewellers__20HzeFw.webp",
+          "frontend/public/assets/casting-ladies-gold-rings.jpg",
           "frontend/src/components/sections/GallerySection.tsx"
         ],
         "matchedFiles": [
-          "frontend/public/assets/generated/gold-laser-cutting-logo.dim_512x512.png",
-          "frontend/public/assets/generated/hero-bg-luxury.dim_1920x1080.png",
-          "frontend/public/assets/generated/gallery-sample-01.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-02.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-03.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-04.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-05.dim_1200x900.png",
-          "frontend/public/assets/generated/gallery-sample-06.dim_1200x900.png",
-          "frontend/src/components/sections/HeroSection.tsx",
           "frontend/src/components/sections/GallerySection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-2",
-        "summary": "Implement the homepage hero section with the exact heading and subheading provided and three primary CTAs: Call Now (tel:7906968141), WhatsApp Now (link to WhatsApp chat for 8126108743), and Get Quote (scrolls to a quote/contact form section).",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/sections/HeroSection.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/sections/HeroSection.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-3",
-        "summary": "Add an About Us section in English describing 5+ years of jewellery laser cutting experience, advanced laser machines, high precision, fine finishing, and being trusted in Etawah.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/sections/AboutSection.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/sections/AboutSection.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-4",
-        "summary": "Add a Services section listing all services provided by the user, displayed as premium cards or a clean list with icons, keeping copy in English.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/sections/ServicesSection.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/sections/ServicesSection.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-5",
-        "summary": "Add a Gallery section with luxury-styled image placeholders for jewellery cutting samples, using locally stored static images in the frontend public assets.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/sections/GallerySection.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/sections/GallerySection.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-6",
-        "summary": "Add a Why Choose Us section containing all six bullet points provided by the user.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/sections/WhyChooseUsSection.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/sections/WhyChooseUsSection.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-7",
-        "summary": "Add a Testimonials section with 3 positive customer reviews (English), presented in a premium card layout.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/sections/TestimonialsSection.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/sections/TestimonialsSection.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-8",
-        "summary": "Add an FAQ section that includes the four provided questions and clear English answers aligned with the business (time to cut, custom designs, starting price, bulk orders).",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/sections/FaqSection.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/sections/FaqSection.tsx",
-          "frontend/src/App.tsx"
-        ]
-      },
-      {
-        "id": "REQ-9",
-        "summary": "Add a Contact section including: business name, location (Etawah, Uttar Pradesh), primary phone number (7906968141), WhatsApp number (8126108743), a simple Get Quote form (name, phone, message), and a Google Maps embed for Etawah, Uttar Pradesh.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/sections/ContactSection.tsx",
-          "frontend/src/App.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/sections/ContactSection.tsx",
-          "frontend/src/App.tsx"
         ]
       }
     ]
   },
   "changedFiles": [
-    "backend/main.mo",
     "build-request.json",
-    "build-template/Dockerfile",
-    "build-template/LICENSE",
     "build-template/README.md",
-    "build-template/deploy.sh",
-    "build-template/icp.yaml",
-    "build-template/package.json",
-    "build-template/pnpm-lock.yaml",
-    "build-template/pnpm-workspace.yaml",
-    "build-template/scripts/prune-unused-images.js",
-    "build-template/scripts/resize-images.js",
-    "build-template/src/backend/canister.yaml",
-    "build-template/src/backend/system-idl/aaaaa-aa.did",
-    "build-template/src/frontend/canister.yaml",
-    "build-template/src/frontend/components.json",
-    "build-template/src/frontend/env.json",
-    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
-    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
-    "build-template/src/frontend/eslint.config.js",
-    "build-template/src/frontend/package.json",
-    "build-template/src/frontend/postcss.config.js",
-    "build-template/src/frontend/src/components/ui/accordion.tsx",
-    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
-    "build-template/src/frontend/src/components/ui/alert.tsx",
-    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
-    "build-template/src/frontend/src/components/ui/avatar.tsx",
-    "build-template/src/frontend/src/components/ui/badge.tsx",
-    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
-    "build-template/src/frontend/src/components/ui/button.tsx",
-    "build-template/src/frontend/src/components/ui/calendar.tsx",
-    "build-template/src/frontend/src/components/ui/card.tsx",
-    "build-template/src/frontend/src/components/ui/carousel.tsx",
-    "build-template/src/frontend/src/components/ui/chart.tsx",
-    "build-template/src/frontend/src/components/ui/checkbox.tsx",
-    "build-template/src/frontend/src/components/ui/collapsible.tsx",
-    "build-template/src/frontend/src/components/ui/command.tsx",
-    "build-template/src/frontend/src/components/ui/context-menu.tsx",
-    "build-template/src/frontend/src/components/ui/dialog.tsx",
-    "build-template/src/frontend/src/components/ui/drawer.tsx",
-    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
-    "build-template/src/frontend/src/components/ui/form.tsx",
-    "build-template/src/frontend/src/components/ui/hover-card.tsx",
-    "build-template/src/frontend/src/components/ui/input-otp.tsx",
-    "build-template/src/frontend/src/components/ui/input.tsx",
-    "build-template/src/frontend/src/components/ui/label.tsx",
-    "build-template/src/frontend/src/components/ui/menubar.tsx",
-    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
-    "build-template/src/frontend/src/components/ui/pagination.tsx",
-    "build-template/src/frontend/src/components/ui/popover.tsx",
-    "build-template/src/frontend/src/components/ui/progress.tsx",
-    "build-template/src/frontend/src/components/ui/radio-group.tsx",
-    "build-template/src/frontend/src/components/ui/resizable.tsx",
-    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
-    "build-template/src/frontend/src/components/ui/select.tsx",
-    "build-template/src/frontend/src/components/ui/separator.tsx",
-    "build-template/src/frontend/src/components/ui/sheet.tsx",
-    "build-template/src/frontend/src/components/ui/sidebar.tsx",
-    "build-template/src/frontend/src/components/ui/skeleton.tsx",
-    "build-template/src/frontend/src/components/ui/slider.tsx",
-    "build-template/src/frontend/src/components/ui/sonner.tsx",
-    "build-template/src/frontend/src/components/ui/switch.tsx",
-    "build-template/src/frontend/src/components/ui/table.tsx",
-    "build-template/src/frontend/src/components/ui/tabs.tsx",
-    "build-template/src/frontend/src/components/ui/textarea.tsx",
-    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
-    "build-template/src/frontend/src/components/ui/toggle.tsx",
-    "build-template/src/frontend/src/components/ui/tooltip.tsx",
-    "build-template/src/frontend/src/hooks/use-mobile.tsx",
-    "build-template/src/frontend/src/lib/utils.ts",
-    "build-template/src/frontend/tsconfig.json",
-    "build-template/src/frontend/vite.config.js",
-    "build-template/tsconfig.json",
-    "caffeine.lock.json",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/index.css",
-    "frontend/index.html",
-    "frontend/public/assets/generated/gallery-sample-01.dim_1200x900.png",
-    "frontend/public/assets/generated/gallery-sample-02.dim_1200x900.png",
-    "frontend/public/assets/generated/gallery-sample-03.dim_1200x900.png",
-    "frontend/public/assets/generated/gallery-sample-04.dim_1200x900.png",
-    "frontend/public/assets/generated/gallery-sample-05.dim_1200x900.png",
-    "frontend/public/assets/generated/gallery-sample-06.dim_1200x900.png",
-    "frontend/public/assets/generated/gold-laser-cutting-logo.dim_512x512.png",
-    "frontend/public/assets/generated/hero-bg-luxury.dim_1920x1080.png",
-    "frontend/src/App.tsx",
-    "frontend/src/backend.d.ts",
-    "frontend/src/backend.ts",
-    "frontend/src/components/StickyWhatsAppButton.tsx",
-    "frontend/src/components/layout/SiteFooter.tsx",
-    "frontend/src/components/layout/SiteHeader.tsx",
-    "frontend/src/components/sections/AboutSection.tsx",
-    "frontend/src/components/sections/ContactSection.tsx",
-    "frontend/src/components/sections/FaqSection.tsx",
     "frontend/src/components/sections/GallerySection.tsx",
     "frontend/src/components/sections/HeroSection.tsx",
-    "frontend/src/components/sections/ServicesSection.tsx",
-    "frontend/src/components/sections/TestimonialsSection.tsx",
-    "frontend/src/components/sections/WhyChooseUsSection.tsx",
-    "frontend/src/config.ts",
-    "frontend/src/declarations/backend.did.d.ts",
-    "frontend/src/declarations/backend.did.js",
-    "frontend/src/hooks/useActor.ts",
-    "frontend/src/hooks/useInternetIdentity.ts",
-    "frontend/src/hooks/useScrollReveal.ts",
-    "frontend/src/index.css",
-    "frontend/src/main.tsx",
-    "frontend/src/ui-summary.json",
-    "frontend/src/utils/StorageClient.ts",
-    "frontend/tailwind.config.js",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

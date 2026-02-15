@@ -50,8 +50,13 @@ export function HeroSection() {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 text-balance">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6 text-balance">
             5+ Years of Precision Jewellery Laser Cutting Experience
+          </p>
+
+          {/* Tagline */}
+          <p className="text-lg md:text-xl font-semibold gold-text mb-12 text-balance">
+            Your Trust, our Quality Work
           </p>
 
           {/* CTA Buttons */}
